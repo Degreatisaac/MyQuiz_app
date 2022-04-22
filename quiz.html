@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <title>MyQuiz</title>
+    <body>
+           <div class="header">
+            <h1 class="myquiz-header">My<span class="myquiz">Quiz</span></h1>
+            <h1 class="welcome-header">Welcome <span id="username">User</span>!</h1>
+           </div>
+           <div id="start">Start Test</div>
+           <div id="guide">
+               <h2>Test Guide</h2>
+               <h4>1. You Have Only 20 Seconds For Each Questions.</h4>
+               <h4>2. Once You Select Your Answer.It Can't Be Undone.</h4>
+               <h4>3. You'll Get Points On The Basic Of Your Correct Answers.</h4>
+               <h4>4. You Can't Exit From The Test While You Are Playing.</h4>
+               <div id="button">
+                   <button id="exit">Exit</button>
+                   <button id="continue">Continue</button>
+               </div>
+           </div>
+           <div id="quiz">
+               <div id="quiz_header">
+                   <h5>Practice Test</h5>
+                   <div id="timer">
+                       <h6>Time Left: <span id="time">00</span></h6>
+                       
+                   </div>
+               </div>
+   
+               <div id="question">
+                   <h2 id="questionNo">1/10</h2>
+                   <h2 id="questionText"></h2>
+               </div>
+   
+               <div id="optionList">
+                   <h4 class="choice_que" id="option1"></h4>
+                   <h4 class="choice_que" id="option2"></h4>
+                   <h4 class="choice_que" id="option3"></h4>
+                   <h4 class="choice_que" id="option4"></h4>
+               </div>
+   
+               <div id="answersSection">
+                <h3 id="total_correct">3 Of 10 Questions</h3>
+                   <h3 id="prev_question">Previous</h3>
+                   <h3 id="next_question">Next</h3>
+               </div>
+           </div>
+           <div id="result">
+               <i class="fas fa-trophy"></i>
+               <h6>Weldone!, the Test is Over</h6>
+               <h6 id="points">You Got 4 Out Of 10</h6>
+               <button id="quit">Quit Test</button>
+               <button id="startAgain">Start Again</button>
+           </div>
+       </div>
+        <footer>
+            <p>Powered by: DeGreatIsaac@MyQuiz.com</p>
+        </footer>
+    </body>
+</html>
+
+<style>
+body{
+    background-color: rgb(243, 229, 210);
+
+}
+.header{
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.welcome-header{
+    position: relative;
+    left: 23.5cm;
+}
+
+.myquiz-header{
+    position: relative;
+    left: 1cm;
+}
+.myquiz{
+    color: rgb(231, 120, 157);
+}
+#start{
+    border-radius: 5px 5px;
+    border: 1px solid rgb(231, 120, 157);;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+     height: 25px;
+    width: 110px;
+    position: relative;
+    left: 15cm;
+    color: rgb(231, 120, 157);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /*    display: none;*/
+}
+
+#start:hover {
+    background: rgb(194, 45, 94);
+    color: #e7f1fa;
+}
+#guide, #quiz{
+    height: auto;
+    width: 500px;
+    align-self: center;
+    color: rgb(26, 1, 9);
+    position: relative;
+    left: 10cm;
+    top: 1cm;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: none;
+
+    
+}
+#exit, #continue{
+
+    border-radius: 5px 5px;
+    border: 1px solid rgb(231, 120, 157);;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+     height: 25px;
+    width: 110px;
+    color: rgb(231, 120, 157);
+    background-color: rgb(243, 229, 210);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#exit:hover, #continue:hover{
+    background: rgb(194, 45, 94);
+    color: #e7f1fa;
+}
+
+footer{
+    text-align: center;
+    font-size: 20px;
+    margin: 1.4cm;
+}
+h2{
+    color: rgb(231, 120, 157);
+    font-size: 30px;
+}
+h5{
+    color: rgb(231, 120, 157);
+    font-size: 30px;
+    position: relative;
+    left: 3.5cm;
+}
+#timer{
+    color: rgb(231, 120, 157);
+    font-size: 25px;
+    position: relative;
+    left: 9cm;
+    bottom: 1cm;
+}
+#next_question, #prev_question{
+
+    border-radius: 5px 5px;
+    border: 1px solid rgb(231, 120, 157);;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+     height: 25px;
+    width: 110px;
+    position: relative;
+    left: 9cm;
+    color: rgb(231, 120, 157);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#next_question:hover, #prev_question:hover{
+    background: rgb(194, 45, 94);
+    color: #e7f1fa;
+}
+#prev_question{
+    border-radius: 5px 5px;
+    border: 1px solid rgb(231, 120, 157);;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+     height: 25px;
+    width: 110px;
+    position: relative;
+    left: 5.5cm;
+    top: 1.2cm;
+    color: rgb(231, 120, 157);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#result{
+    position: relative;
+    text-align: center;
+    color:rgb(231, 120, 157);
+    top: 1cm;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: none;
+}
+#quit, #startAgain{
+    border-radius: 5px 5px;
+    border: 1px solid rgb(231, 120, 157);
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+     height: 25px;
+    width: 110px;
+    color: rgb(231, 120, 157);
+    background-color: rgb(243, 229, 210);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#quit:hover, #startAgain:hover{
+    background: rgb(194, 45, 94);
+    color: #e7f1fa;
+}
+#optionList h4 {
+    height: 50px;
+    width: 410px;
+    background:  rgb(238, 215, 182);
+    line-height: 50px;
+    margin: 5px 0;
+    border-radius: 5px;
+    padding: 0 20px;
+    font-size: 20px;
+    color: rgb(180, 67, 67);
+    overflow: hidden;
+    border: 1px solid rgb(231, 120, 157);
+    cursor: pointer;
+}
+#optionList h4:hover{
+    background: rgb(194, 45, 94);
+    color: #e7f1fa;
+}
+</style>
+<script src="quiz.js"></script>
