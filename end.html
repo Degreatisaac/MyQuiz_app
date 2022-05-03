@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Quiz</title>
+    
+    <!-- style.css -->
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            
+            <h1>My<span class="spanquiz">Quiz</span></h1>
+            <div id="end">
+           <i class="fas fa-award award_icon"></i>
+           <div id="reward">
+           <h3 class="username">Well Done! <span class="name"></span></h3>
+           <p class="userpoints">You Scored <span class="points"></span>%</p>
+         <p class="usertime"> Time Spent <span class="time_taken"></span>Minutes</p>
+           </div>
+         <button id="Retake" onclick="Retake()">Retake Test</button>
+         <button id="check">Check Answers</button>
+         </div>
+
+         <div id="answerBank">
+             <h2>Answers :</h2>
+             <ol type="1" id="Answers">
+                <li>  
+                _____ is the wordone per unit time?<br>
+                    answer: "Power" <br>
+                    options: ['Energy', 'Force', 'Power', 'Velocity']
+                </li>
+            
+                <li>
+                     ______ is the smallest unit of life? <br>
+                    answer: "Cell"<br>
+                    options: ['Cell', 'Tissues', 'System', 'Organs']
+                </li>
+            
+                <li>
+                A boy carries a load of 15N through a distance of 5m. Calculate the work done in carrying the load. <br>
+                    answer: "75J" <br>
+                    options: ['125J', '25J', '65J', '75J']
+                </li>
+
+                <li>
+                    Which of these does not make up a system? <br>
+                    answer: "body" <br>
+                    options: ['body', 'Tissues', 'Organ', 'System']
+                </li>
+                
+                <li>
+                    Find the area of a square if one of it side is 18m <br>
+                    answer: "324m" <br>
+                    options: ['125m', '324m', '242m', '198m']
+                </li>
+                
+                <li>
+                    _________ is a system used for gaseous exchange? <br>
+                    answer: "Respiratory system" <br>
+                    options: ['Reproductive system', 'Respiratory system', 'Digestive system', 'Excretory system']
+                </li>
+
+                <li>
+                A polygon which has 7 sides is called? <br>
+                    answer: "Heptagon" <br>
+                    options: ['Nonagon', 'Quadragon', 'Decagon', 'Heptagon']
+                </li>
+
+                <li>
+                Which of these is not an organ for respiration? <br>
+                    answer: "Eyes" <br>
+                    options: ["Nose", "Eyes", "Lungs", "Skin"]
+                </li>
+                
+                <li>
+                Calculate the perimeter of triangle with side a=4cm, b=5cm, c=6cm <br>
+                    answer: "15cm" <br>
+                    options: ["25cm", "10cm", "15cm", "25cm"]
+                </li>
+                
+                <li>
+                Which verse of the bible says we shall not be ashamed of the gospel of christ, for it is a power unto salvation to them that believe? <br>
+                    answer: "Romans 1:16" <br>
+                    options: ["Romans 1:18", "Romans 1:17", "Romans 1:16", "Romans 1:15"]
+                </li> 
+            
+                <li>
+                A triangle ABC, has angle A=60* B=70* find C <br>
+                  answer: "50*" <br>
+                  options: ["45*", "70*", "50*", "60*"]
+                </li>
+                
+                <li>
+                A rhombus ABCD, has angle A=60* B=70* c=90* find D <br>
+                answer: "140*" <br>
+                options: ["140*", "360*", "90*", "150*"]
+                </li>
+                
+                <li>
+                White blood cell serves as _______ to the body system? <br>
+                answer: "Immune system" <br>
+                options: ["Stong system", "Alliance", "Immune system", "Provider"]
+                </li>
+                
+                <li>
+                The epistle of Paul the Apostle to the Romans was addressed to the? <br>
+                answer: "Church in Rome" <br>
+                options: ["King in Rome", "Unbelievers in Rome", "Church in Rome", "Jews in Rome"]
+                </li>
+                
+                <li>
+                Who proposed in his heart not to eat from the kings meal?<br>
+                answer: "Daniel"<br>
+              options: ["Joshua", "Moses", "Abraham", "Daniel"]
+                </li>
+            
+                <li>
+              _______ is a triangle which has no angle and side equal?<br>
+              answer: "Scelene"<br>
+              options: ["Acute", "Equilateral", "Scelene", "Isoceles"]
+              </li>
+            
+            <li>
+              Energy can neither be created nor destroy but can be transfer from one form to the other is called the law of __________ <br>
+              answer: "Thermodynamics"<br>
+              options: ["Power", "Thermodynamics", "Work", "Physics"]
+            </li>
+
+            <li>
+            How many forms of energy do we have?<br>
+            answer: "2"<br>
+            options: ["1", "2", "3", "4"]
+            </li>
+            
+            <li>
+              Find the area of a triangle if  the height is 7cm and the base is 6cm?<br>,
+              answer: "21cm"<br>
+              options: ["15cm", "26cm", "33cm", "21cm"]
+            </li>
+            
+            <li>
+              Calculate the power if the force is 15N with a distance of 16N for 30s <br>
+              answer: "8W" <br>
+              options: ["10W", "13W", "8W", "11W"]
+            </li>
+             </ol>
+             <button id="Return" onclick="Return()">Retake Test</button>
+         </div>
+
+        </div>
+    </div>
+
+
+
+        
+        <script src="userInfo.js"></script>
+        <script src="quiz.js"></script>
+</body>
+</html>

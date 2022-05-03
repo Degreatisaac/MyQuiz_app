@@ -1,0 +1,197 @@
+body{
+  background-color: rgb(248, 229, 242);
+}
+.spanquiz{
+  color: rgb(236, 116, 208);
+  
+}
+h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: relative;
+  padding: .3cm 1cm;
+}
+.welcome_form input,
+.welcome_form button {
+  width: 25%;
+
+  align-content: center;
+  position: relative;
+  top: 4cm;
+  left: 12cm;
+}
+
+.welcome_form input {
+  background-color: transparent;
+  color:rgb(236, 116, 208);
+  font-size:18px;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid rgb(236, 116, 208);
+  margin-bottom: 15px;
+}
+
+.welcome_form input:focus {
+  outline: none;
+}
+
+.welcome_form button {
+  padding: 10px 0;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(236, 116, 208);
+  color: #ffff;
+  font-size: 22px;
+  transition: 0.4s all;
+}
+
+.welcome_form button:hover {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+.quiz_user{
+  display: flex;
+}
+.greet{
+  position: relative;
+  left: 22cm;
+}
+.quiz_timer{
+  position: relative;
+  left: 17.1cm;
+  top: 1.3cm;
+}
+
+#guide{
+  background-color: rgb(236, 116, 208);
+  border: 2px;
+  width: 50%;
+  padding: 1cm;
+  border-radius: 10px;
+  color: #ffff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: relative;
+  left: 7cm;
+  top: 2cm;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  display: block;
+}
+
+#proceed{
+  border: #ffff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  width: 100px;
+  position: relative;
+  left: 14cm;
+  top: 0.5cm;
+  transition: 0.4s all;
+
+}
+
+#proceed:hover {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+.quiz_body, #end, #answerBank{
+  background-color: rgb(236, 116, 208);
+  border: 2px;
+  width: 50%;
+  padding: 1cm;
+  border-radius: 10px;
+  color: #ffff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: relative;
+  left: 7cm;
+  top: 1cm;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  display: none;
+}
+
+.btn-next, #submit, #previous{
+  
+  border: #ffff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  width: 100px;
+  position: relative;
+  left: 8cm;
+  top: 0.5cm;
+  transition: 0.4s all;
+}
+
+.btn-next:hover, #submit:hover, #previous:hover{
+  
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.option_group {
+  list-style-type: none;
+  margin: 30px 0;
+  color: rgb(236, 116, 208);
+}
+
+.option {
+  display: block;
+  width: 300px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  border-radius: 100px;
+  border: 2px solid transparent;
+  transition: 0.4s all;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.option:hover {
+  cursor: pointer;
+  border: 2px solid #bd0fae;
+  color: #bd0fae;
+}
+.option.active {
+  background-color: #bd0fae;
+  color: #fff;
+}
+#Answers{
+  font-size: 20px;
+  
+}
+li{
+  margin-bottom: 1cm;
+}
+#answerBank{
+  display: none;
+}
+
+#end{
+  display: block;
+  text-align: center;
+}
+#reward{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+}
+
+#check, #Retake, #Return{
+  
+  border: #ffff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.4s all;
+}
+#check:hover, #Retake:hover, #Return:hover{
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+#Return{
+  position: relative;
+  left: 7cm;
+}

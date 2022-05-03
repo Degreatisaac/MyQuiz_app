@@ -1,203 +1,225 @@
-let MCQS = [{
-    question: "how long will it take the Earth to make complete a rotation ?",
-    choice1: "365 days",
-    choice2: "60 Minutes",
-    choice3: "3600 seconds",
-    choice4: "24 hours",
-    answer: 3
+let questions = [
+    {
+        id: 1,
+        question: '_____ is the wordone per unit time?',
+        answer: "Power",
+        options: ['Energy', 'Force', 'Power', 'Velocity']
+    },
+
+    {
+        id: 2,
+        question: '______ is the smallest unit of life?',
+        answer: "Cell",
+        options: ['Cell', 'Tissues', 'System', 'Organs']
+    },
+
+    {
+        id: 3,
+        question: 'A boy carries a load of 15N through a distance of 5m. Calculate the work done in carrying the load.',
+        answer: "75J",
+        options: ['125J', '25J', '65J', '75J']
+    },
+
+    {
+        id: 4,
+        question: 'Which of these does not make up a system?',
+        answer: "body",
+        options: ['body', 'Tissues', 'Organ', 'System']
+    },
+
+    {
+        id: 5,
+        question: 'Find the area of a square if one of it side is 18m',
+        answer: "324m",
+        options: ['125m', '324m', '242m', '198m']
+    },
+
+    {
+        id: 6,
+        question: '_________ is a system used for gaseous exchange?',
+        answer: "Respiratory system",
+        options: ['Reproductive system', 'Respiratory system', 'Digestive system', 'Excretory system']
+    },
+
+    {
+        id: 7,
+        question: "A polygon which has 7 sides is called?",
+        answer: "Heptagon",
+        options: ['Nonagon', 'Quadragon', 'Decagon', 'Heptagon']
+    },
+
+    {
+        id: 8,
+        question: "Which of these is not an organ for respiration?",
+        answer: "Eyes",
+        options: ["Nose", "Eyes", "Lungs", "Skin"]
+    },
+
+    {
+        id: 9,
+        question: "Calculate the perimeter of triangle with side a=4cm, b=5cm, c=6cm",
+        answer: "15cm",
+        options: ["25cm", "10cm", "15cm", "25cm"]
+    },
+
+    {
+        id: 10,
+        question: "Which verse of the bible says we shall not be ashamed of the gospel of christ, for it is a power unto salvation to them that believe?",
+        answer: "Romans 1:16",
+        options: ["Romans 1:18", "Romans 1:17", "Romans 1:16", "Romans 1:15"]
+    },
+
+    {
+      id: 11,
+      question: "a triangle ABC, has angle A=60* B=70* find C",
+      answer: "50*",
+      options: ["45*", "70*", "50*", "60*"]
+  },
+
+  {
+    id: 12,
+    question: "a rhombus ABCD, has angle A=60* B=70* c=90* find D",
+    answer: "140*",
+    options: ["140*", "360*", "90*", "150*"]
 },
-            {
-            question: "Ade's last birthday was Febuary 29, 2020. is next birthday will be?",
-    choice1: "Febuary 29, 2024",
-    choice2: "Febuary 29, 2023",
-    choice3: "Febuary 29, 2022",
-    choice4: "Febuary 29, 2021",
-    answer: 0
+
+{
+  id: 13,
+  question: "White blood cell serves as _______ to the body system?",
+  answer: "Immune system",
+  options: ["Stong system", "Alliance", "Immune system", "Provider"]
 },
-            {
-            question: "The probability that Buhari will loss 2023 election is 1 because?",
-    choice1: "Buhari didn't have a politcal party",
-    choice2: "Buhari is not the people's choice",
-    choice3: "Buhari is not a presidential candidate",
-    choice4: "Buhari failed Nigeria for two terms",
-    answer: 2
+
+{
+  id: 14,
+  question: "The epistle of Paul the Apostle to the Romans was addressed to the?",
+  answer: "Church in Rome",
+  options: ["King in Rome", "Unbelievers in Rome", "Church in Rome", "Jews in Rome"]
 },
-            {
-            question: "That John is an aspirant of FUNAAB makes him a/an?",
-    choice1: "Undergraduate",
-    choice2: "Student",
-    choice3: "Postgraduate",
-    choice4: "Jambite",
-    answer: 1
+
+{
+  id: 15,
+  question: "Who proposed in his heart not to eat from the kings meal?",
+  answer: "Daniel",
+  options: ["Joshua", "Moses", "Abraham", "Daniel"]
 },
-            {
-            question: "Shalewa is a Nigerian and he has a Voters Card, it means she's?",
-    choice1: "18 years old",
-    choice2: "More than 18 years old",
-    choice3: "Eligible to vote",
-    choice4: "a candidate",
-    answer: 2
+
+{
+  id: 16,
+  question: "_______ is a triangle which has no angle and side equal?",
+  answer: "Scelene",
+  options: ["Acute", "Equilateral", "Scelene", "Isoceles"]
 },
-            {
-            question: "Chinedu scored 40 in an examination, if the pass mark is 39 it means?",
-    choice1: "Have a carryover",
-    choice2: "Failed the examination",
-    choice3: "Didn't prepare for the examination",
-    choice4: "Passed the examination",
-    answer: 3
+
+{
+  id: 17,
+  question: "Energy can neither be created nor destroy but can be transfer from one form to the other is called the law of __________",
+  answer: "Thermodynamics",
+  options: ["Power", "Thermodynamics", "Work", "Physics"]
 },
-            {
-               question: "which of these is not an academic body?",
-    choice1: "ASUU",
-    choice2: "NASU",
-    choice3: "ASUP",
-    choice4: "NAT",
-    answer: 1
-},{
-               question: "If Dayo is a colphysite, it means he is?",
-    choice1: "a funaabite",
-    choice2: "in chemistry department",
-    choice3: "an outstanding student",
-    choice4: "competitive",
-    answer: 0
+
+{
+  id: 18,
+  question: "How many forms of energy do we have?",
+  answer: "2",
+  options: ["1", "2", "3", "4"]
 },
-            {
-               question: "Which of these is not a TV reality show?",
-    choice1: "Ultimate Search",
-    choice2: "BIg Brother Naija",
-    choice3: "Nigeria Idol",
-    choice4: "Funsab Make we yarn",
-    answer: 3
+
+{
+  id: 19,
+  question: "Find the area of a triangle if  the height is 7cm and the base is 6cm?",
+  answer: "21cm",
+  options: ["15cm", "26cm", "33cm", "21cm"]
 },
-            {
-               question: "Which of these is in the right order of authority?",
-    choice1: "SUG President",
-    choice2: "Vice Chancellor",
-    choice3: "Welfare Director",
-    choice4: "Head of Class",
-    answer: 3
-}];
+
+{
+  id: 20,
+  question: "Calculate the power if the force is 15N with a distance of 16N for 30s",
+  answer: "8W",
+  options: ["10W", "13W", "8W", "11W"]
+}
+
+];
 
 
+let question_count = 0;
+let points = 0;
+
+window.onload = function() {
+  show(question_count);
+
+};
+
+function next() {
+
+   
+  
+  if (question_count == questions.length - 1) {
+    sessionStorage.setItem("time", time);
+    clearInterval();
+  }
+  console.log(question_count);
+
+  let user_answer = document.querySelector("li.option.active").innerHTML;
+  
+  if (user_answer == questions[question_count].answer) {
+    points += 5;
+    sessionStorage.setItem("points", points);
+  }
+  console.log(points);
+
+  question_count++;
+  show(question_count);
+}
+
+function show(count) {
+  let question = document.getElementById("questions");
+  let [first, second, third, fourth] = questions[count].options;
+
+  question.innerHTML = `
+  <h2>Q${count + 1}/${questions.length} ${questions[count].question}</h2>
+   <ul class="option_group">
+  <li class="option">${first}</li>
+  <li class="option">${second}</li>
+  <li class="option">${third}</li>
+  <li class="option">${fourth}</li>
+</ul> 
+  `;
+  toggleActive();
+}
+
+function toggleActive() {
+  let option = document.querySelectorAll("li.option");
+  for (let i = 0; i < option.length; i++) {
+    option[i].onclick = function() {
+      for (let i = 0; i < option.length; i++) {
+        if (option[i].classList.contains("active")) {
+          option[i].classList.remove("active");
+        }
+      }
+      option[i].classList.add("active");
+    };
+  }
+}
 
 
-let start = document.querySelector("#start");
 let guide = document.querySelector("#guide");
-let exit = document.querySelector("#exit");
-let ContinueBtn = document.querySelector("#continue");
-let quiz = document.querySelector("#quiz");
-let time = document.querySelector("#time");
-let questionNo = document.querySelector("questionNo");
-let questionText = document.querySelector("#questionText");
-let option1 = document.querySelector("#option1");
-let option2 = document.querySelector("#option2");
-let option3 = document.querySelector("#option3");
-let option4 = document.querySelector("#option4");
-let next_question = document.querySelector("#next_question");
-let prev_question = document.querySelector("#prev_question");
-let result = document.querySelector("#result");
-let points = document.querySelector("#points");
-let quit = document.querySelector("#quit");
-let startAgain = document.querySelector("#startAgain");
-let choice_que = document.querySelector(".choice_que");
-let index = 0;
-let timer = 0;
-let interval = 0;
-let correct = 0;
-let UserAns = undefined;
-
-start.addEventListener("click", () => {
-    start.style.display = "none";
-    guide.style.display = "block";
-})
-
-exit.addEventListener("click", () => {
-    start.style.display = "block";
-    guide.style.display = "none";
-})
-
-let countDown = () => {
-    if (timer === 20) {
-        clearInterval(interval);
-        next_question.click();
-    } else {
-        timer++;
-        time.innerText = timer;
-    }
-}
-
-let loadData = () => {
-    questionNo.innerText = index + 1 + ".";
-    questionText.innerText = MCQS[index].question;
-    option1.innerText = MCQS[index].choice1;
-    option2.innerText = MCQS[index].choice2;
-    option3.innerText = MCQS[index].choice3;
-    option4.innerText = MCQS[index].choice4;
-}
-
-loadData();
-
-ContinueBtn.addEventListener("click", () => {
-    quiz.style.display ="block";
-    guide.style.display = "none";
-
-    interval = setInterval(countDown, 1000);
-    loadData();
-
-    choice_que.forEach(removeActive => {
-        removeActive.classList.remove("active")
-    })
-    total_correct.innerHTML == `${correct = 0} Out Of ${MCQS.length} Questions`;
-});
-
-choice_que.forEach((choices, choiceNo) =>{
-    choices.addEventListener("click", () => {
-        choices.classList.add("active");
-        if (choiceNo === MCQS[index].answer) {
-            correct++;
-        } else {
-            correct += 0;
-        }
-        clearInterval(interval);
-        for (i = 0; i <= 3; i++) {
-            choice_que[i].classList.add("disabled");
-        }
-    })
-});
-
-if (index !== MCQS.length - 1) {
-    index++;
-    choice_que.forEach(removeActive => {
-        removeActive.classList.remove("active");
-    })
-
-    //question
-    loadData();
-
-    //result
-    total_correct.style.display = "block";
-    total_correct.innerHTML = `${correct} Out Of ${MCQS.length} Questions`;
-    clearInterval(interval);
-    interval = setInterval(countDown, 1000);
-} else {
-    index = 0;
-
-    clearInterval(interval);
-    quiz.style.display = "none";
-    points.innerHTML = `You Got ${correct} Out Of ${MCQS.length}`;
-    result.style.display = "block";
-}
-for (i = 0; i <= 3; i++) {
-    choice_que[i].classList.remove("disabled");
-}
-
-quit.addEventListener("click", () => {
-start.style.display = "block";
-result.style.display = "none";
-});
-startAgain.addEventListener("click", () => {
-guide.style.display = "block";
-result.style.display = "none";
+let proceed = document.querySelector("#proceed");
+let quiz_body = document.querySelector(".quiz_body");
+proceed.addEventListener("click", () => {
+  guide.style.display = "none";
+  quiz_body.style.display = "block";
 });
 
 
+function submit(){
+  document.getElementById("submit");
+  location.href = "end.html";  
+}
+
+function previous(){
+  document.getElementById("previous");
+  question_count--;
+  show(question_count);
+  
+}
