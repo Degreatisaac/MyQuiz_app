@@ -16,13 +16,13 @@ console.log(Check)
 
 let retakeTest = document.querySelector("#Retake");
 retakeTest.addEventListener("click", () => {
-    location.href = "start.html"; 
+    location.href = "index.html"; 
 });
 console.log(retakeTest)
 
 
 let returnTest = document.querySelector("#Return");
 returnTest.addEventListener("click", () => {
-    location.href = "start.html"; 
+    location.href = "index.html"; 
 });
 console.log(returnTest)

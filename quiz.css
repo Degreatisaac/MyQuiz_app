@@ -57,9 +57,7 @@ h1{
   left: 22cm;
 }
 .quiz_timer{
-  position: relative;
-  left: 17.1cm;
-  top: 1.3cm;
+  display: block;
 }
 
 #guide{
@@ -95,7 +93,7 @@ h1{
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
   transform: translateY(-5px);
 }
-.quiz_body, #end, #answerBank{
+.quiz_body, #end{
   background-color: rgb(236, 116, 208);
   border: 2px;
   width: 50%;
@@ -185,13 +183,91 @@ li{
   cursor: pointer;
   font-size: 15px;
   transition: 0.4s all;
+  
 }
-#check:hover, #Retake:hover, #Return:hover{
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
-  transform: translateY(-5px);
-}
+
 
 #Return{
   position: relative;
-  left: 7cm;
+  left: 5cm;
 }
+
+#check:hover, #Retake:hover, #Return:hover{
+box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+transform: translateY(-5px);}
+
+@media screen and (max-width: 600px) {
+  .welcome_form input,
+.welcome_form button {
+  width: 100%;
+  left: 0cm;
+}}
+
+@media screen and (max-width: 600px) {
+  #guide{
+  left: 15%;
+  width: 50%;
+  padding: 1px, 1px;
+  justify-content: center;
+}}
+
+@media screen and (max-width: 600px) {
+  .move_guide{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #proceed{
+    left: 1.7cm;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .quiz_timer, .greet{
+    position: relative;
+    left: 1.2cm;
+    top: 0.1cm;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+ .quiz_body{
+  left: 2%;
+  width: 80%;
+  top: 0.1%;
+  padding: 1px, 1px;
+  justify-content: center;
+ }
+}
+
+@media screen and (max-width: 600px) {
+  .option_group{
+    position: relative;
+   right: 1cm;
+  }
+ }
+
+ @media screen and (max-width: 600px) {
+  .btn-next, #submit, #previous{
+    position: relative;
+   left: 0.5cm;
+  }
+ }
+
+ 
+ @media screen and (max-width: 600px) {
+  .quiz_timer{
+    position: relative;
+   left: 2.7cm;
+  }
+ }
+
+ @media screen and (max-width: 600px) {
+  #end{
+    position: relative;
+   left: 2cm;
+   top: 2cm;
+  }
+ }
